@@ -1,0 +1,88 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background-color: rgba($dark-blue-color, 0.4)
+    z-index: 100
+    transition: opacity 0.2s
+    visibility: hidden
+    opacity: 0
+    &--visible
+      opacity: 1
+      visibility: visible
+  &__dialog
+    position: fixed
+    max-width: 478px
+    top: 50%
+    left: 50%
+    padding: 33px 88px
+    border-radius: 8px
+    background-color: $dark-blue-color
+    color: #fff
+    transform: translate(-50%, -50%)
+    z-index: 101
+    transition: opacity 0.2s
+    visibility: hidden
+    opacity: 0
+    overflow: auto
+    max-height: 100vh
+    &--visible
+      opacity: 1
+      visibility: visible
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    color: #fff
+    font-size: 22px
+    text-decoration: none
+  &__title
+    font-family: $roboto-condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 28px
+    line-height: 36px
+    text-align: center
+    letter-spacing: 0.2px
+    margin-bottom: 40px
+  &-form
+    max-width: 100%
+    &__item
+      max-width: 100%
+      margin-bottom: 20px
+      height: 60px
+      display: flex
+      flex-direction: column
+    &__input
+      width: 100%
+      height: 40px
+      padding: 10px 20px
+      font-family: $open-sans
+      background-color: #fff
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 18px
+      border: none
+      color: #000
+      z-index: inherit
+      border-radius: 8px
+      margin-bottom: 5px 
+    &__button
+      width: 100%
+      height: 50px
+      padding: 10px 20px
+      background-color: $yellow-color
+      border: none
+      font-family: $open-sans
+      font-style: normal
+      border-radius: 8px 
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: #FFFFFF
+

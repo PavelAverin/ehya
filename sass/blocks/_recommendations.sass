@@ -1,0 +1,142 @@
+.recommendations
+  display: flex
+  align-items: start
+  justify-content: space-between
+  margin-bottom: 79px
+  &__title
+    font-family: $roboto-condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: $dark-blue-color
+  &-left
+    max-width: 751px
+    &__title
+      margin-bottom: 30px
+    &__cards
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+    &__card
+      max-width: 358px
+      flex-basis: 49%
+      padding: 11px
+      border: 1px solid $grey-border
+      &:nth-child(-n+4)
+        margin-bottom: 32px
+    &__button
+      background-color: rgba($blue-color, 0.1)
+      padding: 26px
+      margin-top: 27px
+      border-radius: 8px
+      border: none
+  &__button
+    width: 100%
+    font-family: $roboto-condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $blue-color
+  &-right
+    max-width: 360px
+    &__title
+      margin-bottom: 30px
+    &__cards
+      background-color: rgba($light-grey-color, 0.1)
+      border-radius: 8px
+      padding: 24px 24px 0 24px
+    &__card
+      &:nth-child(-n+3)
+        margin-bottom: 36px
+    &__button
+      background-color: transparent
+      border: none
+      border-top: 1px solid $grey-border
+      padding-top: 25px
+      padding-bottom: 26px
+      margin-top: 26px
+.card
+  display: flex
+  align-items: center
+  border-radius: 8px
+  &__image
+    object-fit: cover
+    border-radius: 8px
+    overflow: hidden
+    margin-right: 27px
+    &--left
+      width: 160px
+      height: 238px
+      margin-right: 20px
+  &__info
+    display: flex
+    flex-direction: column
+    &--left
+      max-width: 152px
+    &--right
+      max-width: 166px
+  &__title
+    font-family: $roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue-color
+    &--left
+      margin-bottom: 16px
+    &--right
+      margin-bottom: 15px
+  &__subtitle
+    font-family: $open-sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $dark-blue-color
+    margin-bottom: 24px
+  &__price
+    font-family: $roboto-condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px;
+    color: $blue-color
+    &--left
+      margin-bottom: 24px
+    &--right
+      margin-bottom: 22px
+  &__bottom
+    display: flex
+    align-items: center
+  &__button
+    max-width: 101px
+    font-family: $open-sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    border: none
+    border-radius: 20px
+    padding: 7px 20px 
+    background-color: $dark-blue-color
+    color: #FFFFFF
+    &--left
+      margin-right: 22px
+  &__icon
+    color: #959EAD
+    cursor: pointer
+    &--red
+      color: red
+
+      
+
+    
